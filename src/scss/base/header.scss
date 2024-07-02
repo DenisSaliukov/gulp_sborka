@@ -1,0 +1,15 @@
+.header__block {
+	padding: 30px;
+	background-color: greenyellow;
+	& p {
+		font-size: 25px;
+		color: #daf;
+		@include fontffont(rgb(71, 207, 231), 35, 2.5);
+	}
+	& :nth-child(2) {
+		@include fontffont(#df35a5, 37, 1.5);
+	}
+	& :last-child {
+		@include fontffont(#2ab873, 23, 1);
+	}
+}

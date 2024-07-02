@@ -1,0 +1,30 @@
+@use 'sass:math'; /* Это нужно для того чтобы работали всякие математические штуки */
+
+$minWidth: 320;
+// Миксины-------------------
+@import 'base/mixins.scss';
+
+// Шрифты--------------------
+@import 'base/fonts';
+@import 'base/header';
+
+$fontFamily: '';
+$fontSize: '';
+
+// Минимальная ширина страницы
+
+body {
+	height: 100%;
+}
+.block {
+	font-size: 20px;
+	@media (max-width: 500px) {
+		font-size: 30px;
+	}
+}
+.text {
+	background-color: #fff;
+	@media (max-width: 500px) {
+		background-color: #333;
+	}
+}
